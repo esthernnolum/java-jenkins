@@ -27,7 +27,7 @@ pipeline {
                         }
                 sh 'mvn clean package'
                 echo 'Running build automation'
-                archiveArtifacts artifacts: 'target/*.war', fingerprint: true
+                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
                   }
                }
         
